@@ -1,0 +1,149 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background: hsl(257, 40%, 49%) url(../images/bg-desktop.svg) left no-repeat;
+    padding: 5rem 8rem;
+    margin: 0 auto;
+}
+
+.header .logo {
+    height: 6rem;
+}
+
+.main {
+    display: flex;
+    margin: 8rem auto 2rem;
+    gap: 3rem;
+}
+
+.main .mockups {
+    width: 100%;
+}
+
+.main .text {
+    text-align: left;
+    padding-top: 4rem;
+    
+}
+
+.main .text .title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.main .text .description {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+}
+
+.main .text .btn {
+    background-color: #ffffff;
+    color: hsl(257, 40%, 49%);
+    width: 100%;
+    max-width: 20rem;
+    height: 6rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .text .btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1rem;
+}
+
+.footer a {
+    border: 1px #fff solid;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.footer a .fab {
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    border-color: hsl(300, 69%, 71%);
+}
+
+.footer a:hover .fab {
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1245px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        padding: 3rem 3.5rem;
+        background-position: top;
+        max-width: 60rem;
+    }
+
+    .header .logo {
+        height: 3.2rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem auto 1rem;
+    }
+
+    .main .text {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .main .text .title {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+
+    .main .text .description {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .main .text .btn {
+        font-size: 1.4rem;
+        height: 4rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+
+    .footer a,
+    .footer a .fab {
+        font-size: 1.5rem;
+    }
+}
